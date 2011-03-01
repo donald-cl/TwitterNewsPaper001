@@ -1,0 +1,16 @@
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\obj\Debug\ResolveAssemblyReference.cache
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TwitterNewsPaper001.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TwitterNewsPaper001.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\Hammock.ClientProfile.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\Newtonsoft.Json.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\Remotion.Data.Linq.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.Fluent.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.Linq.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\Hammock.ClientProfile.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\Newtonsoft.Json.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.Fluent.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\bin\TweetSharp.Next.Linq.pdb
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\obj\Debug\TwitterNewsPaper001.dll
+c:\users\donald\documents\visual studio 2010\Projects\TwitterNewsPaper001\TwitterNewsPaper001\obj\Debug\TwitterNewsPaper001.pdb
