@@ -10,140 +10,32 @@
 
     var delay = 10000;
 
-    function getFoodTweets() {
-        $.ajax({
-            url: "/pollFood/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Food");
-                    pElem.innerHTML += (html);
-                setTimeout("getFoodTweets()", delay);
-            }
-        });
-    }
-    function getCelebrityTweets() {
-        $.ajax({
-            url: "/pollCelebrity/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Celebrity");
-                pElem.innerHTML += (html);
-                setTimeout("getCelebrityTweets()", delay);
-            }
-        });
-    }
-    function getWeatherTweets() {
-        $.ajax({
-            url: "/pollWeather/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Weather");
-                pElem.innerHTML += (html);
-                setTimeout("getWeatherTweets()", delay);
-            }
-        });
-    }
-    function getPoliticalTweets() {
-        $.ajax({
-            url: "/pollPolitical/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Political");
-                pElem.innerHTML += (html);
-                setTimeout("getPoliticalTweets()", delay);
-            }
-        });
-    }
-    function getOccasionTweets() {
-        $.ajax({
-            url: "/pollOccasion/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Occasion");
-                pElem.innerHTML += (html);
-                setTimeout("getOccasionTweets()", delay);
-            }
-        });
-    }
-    function getPartyTweets() {
-        $.ajax({
-            url: "/pollParty/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Party");
-                pElem.innerHTML += (html);
-                setTimeout("getPartyTweets()", delay);
-            }
-        });
-    }
-    function getSportsTweets() {
-        $.ajax({
-            url: "/pollSports/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Sports");
-                pElem.innerHTML += (html);
-                setTimeout("getSportsTweets()", delay);
-            }
-        });
-    }
-    function getTechnologyTweets() {
-        $.ajax({
-            url: "/pollTechnology/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Technology");
-                pElem.innerHTML += (html);
-                setTimeout("getTechnologyTweets()", delay);
-            }
-        });
-    }
-    function getRelationshipTweets() {
-        $.ajax({
-            url: "/pollRelationship/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Relationship");
-                pElem.innerHTML += (html);
-                setTimeout("getRelationshipTweets()", delay);
-            }
-        });
-    }
-    function getMusicTweets() {
-        $.ajax({
-            url: "/pollMusic/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Music");
-                pElem.innerHTML += (html);
-                setTimeout("getMusicTweets()", delay);
-            }
-        });
-    }
-    function geStarcraftTweets() {
-        $.ajax({
-            url: "/pollStarcraft/Index",
-            cache: false,
-            success: function (html) {
-                pElem = document.getElementById("Starcraft");
-                pElem.innerHTML += (html);
-                setTimeout("getStarcraftTweets()", delay);
-            }
-        });
-    }
-    setTimeout("getFoodTweets()", delay)
-    setTimeout("getCelebrityTweets()", 3000)
-    setTimeout("getWeatherTweets()", 6000)
-    setTimeout("getPoliticalTweets()", 12000)
-    setTimeout("getPartyTweets()", 1000)
-    setTimeout("getOccasionTweets()", 15000)
-    setTimeout("getSportsTweets()", 18000)
-    setTimeout("getMusicTweets()", 21000)
+    function getTweets(type) {
 
-getSportsTweets();
-getTechnologyTweets();
-getRelationshipTweets();
-getStarcraftTweets();
+        var recurse = function () { getTweets(type); };
+
+        $.ajax({
+            url: "/poll"+type+"/Index",
+            cache: false,
+            success: function (html) {
+                pElem = document.getElementById(type);
+                pElem.innerHTML += (html);
+                setTimeout(recurse, delay);
+            }
+        });       
+    }
+
+    setTimeout(getTweets("Food"), 4000)
+    setTimeout(getTweets("Celebrity"), 9000)
+    setTimeout(getTweets("Weather"), 6000)
+    setTimeout(getTweets("Political"), 12000)
+    setTimeout(getTweets("Party"), 1000)
+    setTimeout(getTweets("Occassion"), 15000)
+    setTimeout(getTweets("Sports"), 18000)
+    setTimeout(getTweets("Technology"), 20000)
+    setTimeout(getTweets("Relationship"), 23000)
+    setTimeout(getTweets("Starcraft"), 26000)
+
 </script>
 
     <h2>Sports</h2><p id="Sports">
